@@ -37,7 +37,6 @@
 
 
 [Termux-Monet](https://github.com/HardcodedCat/termux-monet) is a unofficial, modified fork of [Termux](https://github.com/termux/termux-app), an Android terminal application and Linux environment, with Monet Theming Implementations.
->>>>>>> b5d673d9 (new links)
 
 ***
 ## Contents
@@ -46,6 +45,7 @@
 - [Wikis](#Wikis)
 - [Miscellaneous](#Miscellaneous)
 - [Debugging](#Debugging)
+- [Disclaimer](#Disclaimer)
 - [Forking Instructions](#Forking)
 - [Special Thanks](#Special-Thanks)
 ***
@@ -103,12 +103,11 @@ su -c getprop persist.sys.fflag.override.settings_enable_monitor_phantom_procs
 
 ***
 
-
 ## Nightly Builds
 
-> Termux-Monet application can be obtained on **Github** either from [`Github Releases`](https://github.com/HardcodedCat/termux-monet/releases) for **stable releases** or from [`Github Actions`](https://github.com/HardcodedCat/termux-monet/actions/workflows/debug_build.yml) for the latest **unstable releases**.
+> Termux-Monet application can be obtained on **Github** either from [`Github Releases`](https://github.com/HardcodedCat/termux-monet/releases) for **stablier releases** or from [`Github Actions`](https://github.com/HardcodedCat/termux-monet/actions/workflows/debug_build.yml) for the latest **unstable releases**.
 
-#### Releases (Stable)
+#### Releases (Stablier)
  - The APKs for `Github Releases` will be listed under `Assets` drop-down of a release. These are automatically attached when a new version is released.
 
 #### Nightly (Unstable)
@@ -163,6 +162,15 @@ Users must post complete report (optionally without sensitive info) when reporti
 
 ***
 
+## Disclaimer
+
+> Do not report issues occurred in Termux Monet on termux-app repo, unless you're completely certain that this problem is also present in the regular Termux App.
+>
+> By installing this app, you agree that you're aware of its unstableness.
+> 
+> I am not responsible for bricked devices, dead SD cards, thermonuclear war, or you getting fired because Termux didn't load. Please do some research if you have any concerns about features and code included in this forked App before installing it! YOU are choosing to replace your Termux app with this one, and if you point the finger at me for messing up your terminal and device, I will laugh at you.
+
+***
 
 ## Forking
 
