@@ -10,7 +10,6 @@ import android.graphics.BlendModeColorFilter;
 import android.graphics.ImageDecoder;
 import android.graphics.Point;
 import android.graphics.PorterDuff;
-import android.graphics.PorterDuffColorFilter;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.media.ThumbnailUtils;
@@ -49,7 +48,7 @@ public final class ImageUtils {
     public static final String ANY_IMAGE_TYPE = IMAGE_TYPE + "/*";
 
 
-    private static final String LOG_TAG = "ImageUtils";
+    private static final String LOG_TAG = "FileUtils";
 
     /**
      * Don't let anyone instantiate this class.
@@ -80,18 +79,6 @@ public final class ImageUtils {
         }
         return bitmap;
     }
-
-    /**
-     * Generate image bitmap from the path.
-     *
-     * @param path The path for image file
-     * @return Bitmap generated from image path, if fails to
-     * to generate returns {@code null}
-     */
-    public static Bitmap getBitmap(String path) {
-        return BitmapFactory.decodeFile(path);
-    }
-
 
     /**
      * Creates an centered and resized {@link Bitmap} according to given size.
@@ -175,9 +162,9 @@ public final class ImageUtils {
     public static void addOverlay(Drawable drawable, int color) {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-            drawable.setColorFilter(new BlendModeColorFilter(color, BlendMode.DARKEN));
+            drawable.setColorFilter(new BlendModeColorFilter(color, BlendMode.MULTIPLY));
         } else {
-            drawable.setColorFilter(new PorterDuffColorFilter(color, PorterDuff.Mode.DARKEN));
+            drawable.setColorFilter(color, PorterDuff.Mode.MULTIPLY);
         }
     }
 
@@ -214,26 +201,13 @@ public final class ImageUtils {
         }
 
         BitmapFactory.Options opt = new BitmapFactory.Options();
-        opt.inJustDecodeBounds = true;
         BitmapFactory.decodeFile(path, opt);
 
+        opt.inJustDecodeBounds = true;
         int imgWidth = opt.outWidth;
         int imgHeight = opt.outHeight;
 
         return Math.abs(imgWidth - width) <= tolerance && Math.abs(imgHeight - height) <= tolerance;
-    }
-
-    public static boolean isImage(String path) {
-        if (!FileUtils.regularFileExists(path, false)) {
-            Logger.logInfo(LOG_TAG, "Image file " + path + " does not exist.");
-            return false;
-        }
-
-        BitmapFactory.Options opt = new BitmapFactory.Options();
-        opt.inJustDecodeBounds = true;
-        BitmapFactory.decodeFile(path, opt);
-
-        return opt.outWidth != -1 && opt.outHeight != -1;
     }
 
     /**
