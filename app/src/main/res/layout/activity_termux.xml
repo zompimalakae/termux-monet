@@ -101,6 +101,7 @@
                             style="?android:attr/buttonBarButtonStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="48dp"
+                            android:textAllCaps="true"
                             android:textColor="@color/menu_accent"
                             android:layout_gravity="center_horizontal"
                             android:layout_weight="1"
@@ -112,6 +113,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="48dp"
                             android:textColor="@color/menu_accent"
+                            android:textAllCaps="true"
                             android:layout_gravity="center_horizontal"
                             android:layout_weight="1"
                             android:text="@string/action_new_session" />
