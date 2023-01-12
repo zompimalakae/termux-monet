@@ -4,6 +4,7 @@
 # https://help.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
 
 version: 2
+enable-beta-ecosystems: true
 updates:
   - package-ecosystem: "gradle" # See documentation for possible values
     directory: "/" # Location of package manifests
@@ -15,6 +16,7 @@ updates:
       - dependency-name: "com.android.tools:desugar_jdk_libs"
       - dependency-name: "androidx.window:window"
       - dependency-name: "androidx.core:core"
+      - dependency-name: "androidx.appcompat:appcompat"
 
   - package-ecosystem: "github-actions"
     directory: "/" # Location of package manifests
