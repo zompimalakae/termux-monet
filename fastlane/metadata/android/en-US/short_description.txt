@@ -1,1 +1,1 @@
-A terminal emulator application for Android 12+ with Monet support.
+A fork of Termux-App with monet implementation and other features
