@@ -1,5 +1,6 @@
 <p align="center">
-  <img src="/art/logo.png?raw=true">
+  <img src="/art/logo_dark.png#gh-dark-mode-only">
+  <img src="/art/logo_light.png#gh-light-mode-only">
 </p>
 <div align="center">
   <a href="https://github.com/HardcodedCat/termux-monet/actions/workflows/debug_build.yml?query=branch%3Amaster">
@@ -18,7 +19,7 @@
     <img src="https://img.shields.io/github/last-commit/HardcodedCat/termux-monet/master?color=informational&label=Updated&logo=github"/>
   </a>
   <a href="https://github.com/HardcodedCat/termux-monet/releases">
-    <img src="https://badgen.net/github/tag/HardcodedCat/termux-monet?color=orange&icon=terminal&label=Latest"/>
+    <img src="https://badgen.net/github/tag/HardcodedCat/termux-monet?icon=terminal&color=orange&label=Latest"/>
   </a>
   <a href="/LICENSE">
     <img src="https://img.shields.io/badge/License-GPLv3_only-informational.svg?logo=gnu&label=License"/>
@@ -27,7 +28,8 @@
 <br />
 
 <p align="center">
-  <img src="/art/screenshot.png?raw=true" width=50% height=50%>
+  <img src="/art/screenshot_dark.png#gh-dark-mode-only" height=50%>
+  <img src="/art/screenshot_light.png#gh-light-mode-only" height=50%>
 </p>
 
 ***
@@ -279,7 +281,8 @@ Users must post complete report (optionally without sensitive info) when reporti
 ***
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/HardcodedCat/termux-monet/master/art/ic_monet.svg" width=50% height=50%>
+<img src="https://raw.githubusercontent.com/HardcodedCat/termux-monet/master/art/ic_monet_dark.svg#gh-dark-mode-only" width=50% height=50%>
+<img src="https://raw.githubusercontent.com/HardcodedCat/termux-monet/master/art/ic_monet_light.svg#gh-light-mode-only" width=50% height=50%>
 </p>
 
 <div align="center">
