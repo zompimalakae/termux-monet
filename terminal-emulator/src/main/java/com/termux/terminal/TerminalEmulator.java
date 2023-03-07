@@ -263,6 +263,8 @@ public final class TerminalEmulator {
     /** If automatic scrolling of terminal is disabled */
     private boolean mAutoScrollDisabled;
 
+    private final boolean mBoldWithBright;
+
     private byte mUtf8ToFollow, mUtf8Index;
     private final byte[] mUtf8InputBuffer = new byte[4];
     private int mLastEmittedCodePoint = -1;
@@ -330,11 +332,12 @@ public final class TerminalEmulator {
         }
     }
 
-    public TerminalEmulator(TerminalOutput session, int columns, int rows, Integer transcriptRows, TerminalSessionClient client) {
+    public TerminalEmulator(TerminalOutput session, boolean boldWithBright, int columns, int rows, Integer transcriptRows, TerminalSessionClient client) {
         mSession = session;
         mScreen = mMainBuffer = new TerminalBuffer(columns, getTerminalTranscriptRows(transcriptRows), rows);
         mAltBuffer = new TerminalBuffer(columns, rows, rows);
         mClient = client;
+        mBoldWithBright = boldWithBright;
         mRows = rows;
         mColumns = columns;
         mTabStop = new boolean[mColumns];
@@ -451,8 +454,6 @@ public final class TerminalEmulator {
         return isDecsetInternalBitSet(DECSET_BIT_REVERSE_VIDEO);
     }
 
-
-
     public boolean isCursorEnabled() {
         return isDecsetInternalBitSet(DECSET_BIT_CURSOR_ENABLED);
     }
@@ -484,6 +485,11 @@ public final class TerminalEmulator {
     /** If mouse events are being sent as escape codes to the terminal. */
     public boolean isMouseTrackingActive() {
         return isDecsetInternalBitSet(DECSET_BIT_MOUSE_TRACKING_PRESS_RELEASE) || isDecsetInternalBitSet(DECSET_BIT_MOUSE_TRACKING_BUTTON_EVENT);
+    }
+
+    /** Indicates if bold should be shown with bright colors. */
+    public boolean isBoldWithBright() {
+        return mBoldWithBright;
     }
 
     private void setDefaultTabStops() {
