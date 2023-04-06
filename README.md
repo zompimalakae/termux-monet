@@ -40,6 +40,9 @@
 <img src="https://hosted.weblate.org/widgets/termux-monet/-/termux-app/multi-blue.svg" alt="Translation status" align="center"/>
 </a>
 
+#### Currently Using Weblate for Translations!
+Join us in https://hosted.weblate.org/engage/termux-monet/
+
 ***
 ## MONET IS ONLY AVAILABLE ON `ANDROID 12+`!
 #### LOWER VERSIONS WILL DISPLAY A STATIC, BLACK AND WHITE MONET THEME
