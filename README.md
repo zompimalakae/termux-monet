@@ -33,6 +33,11 @@
 </p>
 
 ***
+<a href="https://hosted.weblate.org/engage/termux-monet/">
+<img src="https://hosted.weblate.org/widgets/termux-monet/-/termux-app/multi-blue.svg" alt="Translation status" align="center"/>
+</a>
+
+***
 ## MONET IS ONLY AVAILABLE ON `ANDROID 12+`!
 #### LOWER VERSIONS WILL DISPLAY A STATIC, BLACK AND WHITE MONET THEME
 ***
