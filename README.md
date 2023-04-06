@@ -9,6 +9,9 @@
   <a href="https://github.com/HardcodedCat/termux-monet/actions/workflows/run_tests.yml?query=branch%3Amaster">
     <img src="https://img.shields.io/github/actions/workflow/status/HardcodedCat/termux-monet/run_tests.yml?branch=master&label=Test&logo=gradle"/>
   </a>
+  <a href="https://hosted.weblate.org/engage/termux-monet/">
+    <img src="https://hosted.weblate.org/widgets/termux-monet/-/termux-app/svg-badge.svg" alt="Translation status" />
+  </a>
 </div>
 <br />
 <div align="center">
