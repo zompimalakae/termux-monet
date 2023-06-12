@@ -624,8 +624,8 @@ public final class TermuxConstants {
     /**
      * GitHub APK release
      */
-    // Default: "Github"
-    public static final String APK_RELEASE_GITHUB = "Github";
+    // Default: "GitHub"
+    public static final String APK_RELEASE_GITHUB = "GitHub";
 
     /**
      * GitHub APK release signing certificate SHA-256 digest
