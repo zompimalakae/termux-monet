@@ -76,6 +76,7 @@ Join us in https://hosted.weblate.org/engage/termux-monet/
 > - [Termux:Float](https://github.com/HardcodedCat/termux-float)
 > - [Termux:Tasker](https://github.com/HardcodedCat/termux-tasker)
 > - [Termux:Widget](https://github.com/HardcodedCat/termux-widget)
+> - [Termux:GUI](https://github.com/HardcodedCat/termux-gui)
 
 ***
 
