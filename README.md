@@ -35,6 +35,8 @@
   <img src="/art/screenshot_light.png#gh-light-mode-only" height=50%>
 </p>
 
+**We are looking for Termux Android application maintainers.**
+
 ***
 <a href="https://hosted.weblate.org/engage/termux-monet/">
 <img src="https://hosted.weblate.org/widgets/termux-monet/-/multi-blue.svg" alt="Translation status" align="center"/>
@@ -51,6 +53,7 @@ Join us in https://hosted.weblate.org/engage/termux-monet/
 [Termux-Monet](https://github.com/HardcodedCat/termux-monet) is a unofficial, modified fork of [Termux](https://github.com/termux/termux-app), an Android terminal application and Linux environment, with Monet Theming Implementations.
 
 ***
+
 ## Contents
 - [Phantom Process Killer](#Phantom-Process-Killer)
 - [Nightly Releases](#Nightly-Builds)
