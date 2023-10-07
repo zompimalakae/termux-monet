@@ -10,6 +10,9 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
+    commit-message:
+        # Prefix all commit messages with "Changed: "
+        prefix: "Changed"
     rebase-strategy: "disabled"
     ignore:
       - dependency-name: "androidx.preference:preference"
@@ -22,4 +25,7 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
+    commit-message:
+        # Prefix all commit messages with "Changed: "
+        prefix: "Changed"
     rebase-strategy: "disabled"
